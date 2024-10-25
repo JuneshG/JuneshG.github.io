@@ -3,35 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Junesh Gautam's Portfolio</title>
+    <title>Junesh Gautam's Professional Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Junesh Gautam</h1>
-        <p>Engineering Professional</p>
-        <nav>
-            <a href="mailto:juneshgautam@yahoo.com">Email</a> |
-            <a href="https://linkedin.com/in/j-gtm">LinkedIn</a> |
-            <a href="https://github.com/JuneshG">GitHub</a>
-        </nav>
+        <div class="container">
+            <h1>Junesh Gautam</h1>
+            <p>Engineering Professional with Expertise in Computer Science and Mechanical Engineering</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#teaching">Teaching</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-        <section>
+
+    <section id="about" class="section">
+        <div class="container">
             <h2>About Me</h2>
-            <p>Engineering professional with expertise in Computer Science and Mechanical Engineering. Proven experience in software development, IoT automation, and quality engineering.</p>
-        </section>
-        <section>
+            <p>I am an engineering professional with dual expertise in Computer Science and Mechanical Engineering. I have extensive experience in software development, IoT automation, robotics, and quality engineering. I am passionate about utilizing my skills to contribute to innovative engineering solutions that impact the world.</p>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <div class="container">
+            <h2>Professional Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Mechanical Engineering & Physics TA - South Dakota State University</h3>
+                    <span>Jan 2023 - May 2024</span>
+                    <p>Led lab sessions on classical mechanics and assisted in robotics and control systems. Guided students in experimental analysis and troubleshooting.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Weather Station Technician - Mesonet</h3>
+                    <span>Summer 2023 - 2024</span>
+                    <p>Installed and calibrated weather stations and sensors for data collection. Contributed to electronic troubleshooting to improve data accuracy.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Software Engineer - Whale Cloud</h3>
+                    <span>July 2018 - Nov 2022</span>
+                    <p>Managed software deployments, conducted root cause analysis, and quality audits using SQL, Python, and scripting tools in telecom environments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="teaching" class="section">
+        <div class="container">
+            <h2>Teaching Experience</h2>
+            <p>As a Teaching Assistant at South Dakota State University, I facilitated robotics and control system labs, and supported students in hands-on learning experiences.</p>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
             <h2>Projects</h2>
+            <div class="projects">
+                <div class="project-item">
+                    <h3>IoT Mushroom Farming Chamber</h3>
+                    <p>Developed an automated IoT farming chamber using Arduino, Raspberry Pi, and FastAPI.</p>
+                    <a href="https://github.com/JuneshG/mushroom_farming" target="_blank">View on GitHub</a>
+                </div>
+                <div class="project-item">
+                    <h3>Lunar Rover Path Planning</h3>
+                    <p>Created a reinforcement learning model for lunar rover path planning using DQN.</p>
+                    <a href="https://github.com/JuneshG/lunar_rover_control" target="_blank">View on GitHub</a>
+                </div>
+                <div class="project-item">
+                    <h3>Anomaly Detection in Servers</h3>
+                    <p>Built an anomaly detection model to identify data center issues.</p>
+                    <a href="https://github.com/JuneshG/anomaly_detection" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>If you are interested in connecting, please reach out through one of the channels below:</p>
             <ul>
-                <li><a href="https://github.com/JuneshG/mushroom_farming">IoT Mushroom Farming Chamber</a></li>
-                <li><a href="https://github.com/JuneshG/lunar_rover_control">Lunar Rover Path Planning</a></li>
-                <li><a href="https://github.com/JuneshG/anomaly_detection">Anomaly Detection in Servers</a></li>
+                <li>Email: <a href="mailto:juneshgautam@yahoo.com">juneshgautam@yahoo.com</a></li>
+                <li>LinkedIn: <a href="https://linkedin.com/in/j-gtm" target="_blank">linkedin.com/in/j-gtm</a></li>
+                <li>GitHub: <a href="https://github.com/JuneshG" target="_blank">github.com/JuneshG</a></li>
             </ul>
-        </section>
-    </main>
+        </div>
+    </section>
+
     <footer>
-        <p>&copy; 2024 Junesh Gautam</p>
+        <div class="container">
+            <p>&copy; 2024 Junesh Gautam. All Rights Reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
