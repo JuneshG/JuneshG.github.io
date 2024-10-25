@@ -1,35 +1,200 @@
+/* CSS Stylesheet for Junesh Gautam's Professional Portfolio */
+
+/* Color Palette */
+:root {
+    --primary-color: #00bcd4; /* Cyan */
+    --secondary-color: #37474f; /* Dark Gray-Blue */
+    --accent-color: #ff9800; /* Amber */
+    --text-color: #333;
+    --background-color: #f9f9f9;
+    --container-padding: 2rem;
+    --font-family: 'Roboto', sans-serif;
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
 body {
-    font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f9f9f9;
-    color: #333;
-    max-width: 800px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    max-width: 1200px;
     margin: auto;
     padding: 0 1rem;
 }
 
+/* Header */
 header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: var(--container-padding) 0;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    padding: 2rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    margin-top: 1rem;
 }
 
 nav a {
-    margin: 0 0.5rem;
+    color: white;
     text-decoration: none;
-    color: #007acc;
+    font-weight: 700;
+    transition: color 0.3s;
 }
 
-section {
+nav a:hover {
+    color: var(--accent-color);
+}
+
+/* Sections */
+.section {
+    padding: var(--container-padding) 0;
+}
+
+.section h2 {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--primary-color);
+    display: inline-block;
+}
+
+.container {
+    padding: 0 var(--container-padding);
+}
+
+/* Timeline for Experience */
+.timeline {
+    border-left: 3px solid var(--primary-color);
+    padding-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+.timeline-item {
     margin-bottom: 2rem;
+    position: relative;
 }
 
-h1, h2 {
-    color: #007acc;
+.timeline-item h3 {
+    font-size: 1.4rem;
+    color: var(--secondary-color);
 }
 
+.timeline-item span {
+    font-size: 0.9rem;
+    color: var(--primary-color);
+}
+
+.timeline-item p {
+    margin-top: 0.5rem;
+}
+
+/* Projects Section */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.project-item {
+    background-color: white;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+}
+
+.project-item h3 {
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+.project-item a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+.project-item a:hover {
+    color: var(--accent-color);
+}
+
+/* Contact Section */
+#contact ul {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+#contact li {
+    margin-bottom: 0.5rem;
+}
+
+#contact a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#contact a:hover {
+    color: var(--accent-color);
+}
+
+/* Footer */
 footer {
+    background-color: var(--secondary-color);
+    color: white;
     text-align: center;
     padding: 1rem 0;
-    border-top: 1px solid #ddd;
     margin-top: 2rem;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .timeline {
+        padding-left: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
 }
