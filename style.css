@@ -204,6 +204,18 @@ nav a:hover {
     color: var(--accent-color);
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
 }
+.problem {
+    margin-bottom: 40px;
+}
+
+.problem h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.problem p {
+    line-height: 1.6;
+}
 
 /* Footer */
 footer {
